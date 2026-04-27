@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Cursos</title>
+</head>
+<body>
+
+  <h1>Selección de Curso</h1>
+
+  <form>
+
+    <!-- Campo nombre -->
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+    <br><br>
+
+    <!-- Menú desplegable -->
+    <label for="curso">Selecciona un curso:</label><br>
+    <select id="curso" name="curso">
+
+      <!-- Grupo 1 -->
+      <optgroup label="Tecnología">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </optgroup>
+
+      <!-- Grupo 2 -->
+      <optgroup label="Diseño">
+        <option value="ux">UX/UI</option>
+        <option value="grafico">Diseño Gráfico</option>
+      </optgroup>
+
+      <!-- Grupo agregado -->
+      <optgroup label="Idiomas">
+        <option value="ingles">Inglés</option>
+        <option value="frances">Francés</option>
+        <option value="portugues">Portugués</option>
+      </optgroup>
+
+    </select>
+
+    <br><br>
+
+    <!-- Selección múltiple -->
+    <label for="cursos">Selecciona varios cursos:</label><br>
+    <select id="cursos" name="cursos" multiple size="5">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+      <option>Inglés</option>
+      <option>Diseño Gráfico</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+    <label for="lenguajes">Lenguajes de programación favoritos:</label><br>
+
+
+
+  </form>
+
+</body>
+</html>
